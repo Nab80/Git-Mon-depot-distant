@@ -1,17 +1,14 @@
 
-ul{background-color: black;}
+
+h1{text-align:center;}
+
+ul{background-color: black;margin:1px; line-height: 50px;}
+
+li{display:inline-block;}
 
 a{color:white;}
 
-
 #momo{height:100%;width:100%;}
 
-footer:{flex-direction:row;justify-content:flex-start;}
-
-
-    
-
-
-
-
-
+div{width:500px; height:300px; top:110px; float:right; background:grey;}
+            
