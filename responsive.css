@@ -1,0 +1,10 @@
+@media screen and (max-width:768px)
+{
+body{max-width:100%;font-size:2em}
+
+li{display:block}
+
+div{display:none}
+}
+
+#momo{width:100vw}
