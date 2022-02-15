@@ -15,7 +15,7 @@
 
 <header>
 
-    <img src="images/jarditou_logo.jpg" length="120" width="120">
+    <img src="images/jarditou_logo.jpg" alt="jarditou" width="120">
     <h1>Tout le jardin</h1>
 
 <nav>
@@ -28,19 +28,22 @@
   </header>
 
     <body>
-    <img src="images/promotion.jpg" id="momo">
+    <img src="images/promotion.jpg" alt="promo" id="momo">
       <p><b>Contact</b></p>
       <hr>
+
       <section>
         
-        <p>* Ces zones sont obligatoires
+        <p>* Ces zones sont obligatoires</p>
+
+    <form>
     
           <fieldset>
          
       
               <legend>Vos coordonnées</legend>
-              <label for="Votre nom">Votre Nom*:</label><input type="text" name="Votre nom" id="Votre nom"><br>
-              <label for="Votre prénom">Votre Prénom*:</label><input type="text" name="Votre prénom" id="Votre prénom"><br>
+              <label for="Votrenom">Votre Nom*:</label><input type="text" name="Votrenom" id="Votrenom"><br>
+              <label for="Votreprénom">Votre Prénom*:</label><input type="text" name="Votreprénom" id="Votreprénom"><br>
               <label for="Sexe">Sexe*:</label>
               <input type="radio" name="Sexe" value="Féminin">Féminin
               <input type="radio" name="Sexe" value="Masculin">Masculin<br>
@@ -56,12 +59,12 @@
               <label for="Sujet">Sujet*:</label>
               <select id="Sujet">
                   <option value="" selected>Veuillez sélectionner un sujet</option>
-                  <option value="commandes" selected>Mes commandes</option>
-                  <option value="question" selected>Question sur un produit</option>
-                  <option value="rc" selected>Réclamation</option>
-                  <option value="autre" selected>Autres</option>
+                  <option value="commandes">Mes commandes</option>
+                  <option value="question">Question sur un produit</option>
+                  <option value="rc">Réclamation</option>
+                  <option value="autre">Autres</option>
               </select><br>
-              <label for="votre question">Votre question*</label>
+              <label for="votrequestion">Votre question*</label>
               <textarea name="commentaire" rows="2" cols="20"></textarea>
               
           </fieldset>
@@ -69,13 +72,10 @@
           <input type="checkbox" name="info" value="info">*J'accepte le traitement informatique de ce formulaire<br>
           <input type="submit" value="Envoyer">
           <input type="submit" value="Annuler">
-      
-      
-            </form>
-              
+    
+      </section>
 
-    </section>
-    <hr>
+    </form><hr>
 
     <footer>
       <ul>
@@ -83,7 +83,7 @@
         <li><a href="horaires" title="horaires">Horaires</a></li>
         <li><a href="plan" title="plan">Plan du site</a></li>
         </ul>
-        </footer>
+        
     </footer>
     
  
