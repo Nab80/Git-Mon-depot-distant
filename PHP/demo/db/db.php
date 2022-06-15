@@ -7,11 +7,7 @@ define( 'URL' , 'mysql:host=localhost;dbname=record;charset=utf8');
 define('USER' , 'nab');
 define('PASS' , 'nab80');
 
-/**
- * fonction de connexion
- *
- * @return void
- */
+
 function connectionBase() 
 {
     try 
@@ -52,7 +48,6 @@ function findDiscs()
     //$requetePrep->execute();
     $result = $requetePrep->fetchAll(PDO::FETCH_OBJ);
     $requetePrep->closeCursor();
-    //var_dump($result);
     return $result;
 
   //  $result2 = $requetePrep2->fetchAll(PDO::FETCH_OBJ);
@@ -62,11 +57,19 @@ function findDiscs()
 }
 
 
-function findAllDiscs(){
-    $db = connectionBase();
-    $requete = $db->query("SELECT * FROM disc d join artist a on a.artist_id = d.artist_id");
-    $tableau = $requete->fetchAll(PDO::FETCH_OBJ);
-    // on clôt la requête en BDD
-    $requete->closeCursor();
-    return $tableau;
-}
+// function findAllDiscs(){
+//     $db = connectionBase();
+//     $requete = $db->query("SELECT * FROM disc d join artist a on a.artist_id = d.artist_id");
+//     $tableau = $requete->fetchAll(PDO::FETCH_OBJ);
+//     // on clôt la requête en BDD
+//     $requete->closeCursor();
+//     return $tableau;
+// }
+
+//function findDetails() {
+    //$db = connectionBase();
+    //$requete = $db->query("SELECT * FROM disc");
+    //$tableau = $requete->fetchAll(PDO::FETCH_OBJ);  
+   // $requete->closeCursor();
+   // return $tableau;
+//}
