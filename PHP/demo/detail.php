@@ -32,12 +32,14 @@ include "partials/header.php";
             <p class="card-text"><b>Genre :</b> <?= $disc->disc_genre ?></p>
             <p class="card-text"><b>Prix :</b> <?= $disc->disc_price ?></p>
             <p class="card-text"><b>Label :</b> <?= $disc->disc_label ?></p>
-        </div>
+
+        <p class="card-text"><b><?php echo $disc->disc_id ?></p>
 
 </div>
 
-        
-        
+   
+<!--<button type="button" >Primary</button>  -->    
+<a href="disc_form.php?id=<?= $disc->disc_id ?>" type="button" class="btn btn-primary" >Modifier</a>   
 
 
 
