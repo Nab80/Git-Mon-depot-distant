@@ -45,7 +45,7 @@ include "partials/header.php";
                 <td class=""><?= $discs->artist_name ?></td>
                 <td class=""><?= $discs->disc_label ?></td>
                 <td class=""><?= $discs->disc_year ?></td>
-                <td class=""> <a class="btn btn-dark btn-sm" href="detail.php?id=<?= $discs->disc_id?>"  >Détail </svg></a> </td>
+                <td class=""> <a class="btn btn-dark btn-sm" href="detail.php?id=<?= $discs->disc_id?>"  >Détail </a> </td>
             </tr>
 
             <?php //} ?>
@@ -56,3 +56,4 @@ include "partials/header.php";
 </div>
 
 <?php include "partials/footer.php";
+?>

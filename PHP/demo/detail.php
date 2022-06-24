@@ -21,7 +21,7 @@ include "partials/header.php";
 
 ?>
 <div class="container">
-    <h1>FICHE <span class="text-primary"></span>  ARTISTE <?= $_GET["id"]?></h1>
+    <h1>FICHE <span class="text-primary"></span>  DISQUE <?= $_GET["id"]?></h1>
 <div class="row">
 
 
@@ -39,7 +39,8 @@ include "partials/header.php";
 
    
 <!--<button type="button" >Primary</button>  -->    
-<a href="disc_form.php?id=<?= $disc->disc_id ?>" type="button" class="btn btn-primary" >Modifier</a>   
+<a href="disc_form.php?id=<?= $disc->disc_id ?>" type="button" class="btn btn-primary" >Modifier</a>  
+
 
 
 
