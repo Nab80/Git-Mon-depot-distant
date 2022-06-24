@@ -5,7 +5,7 @@
     $url = (isset($_POST['url']) && $_POST['url'] != "") ? $_POST['url'] : Null;
     $year = (isset($_POST['year']) && $_POST['year'] != "") ? $_POST['year'] : Null;
 
-    print_r($_POST);
+
 
 
     // En cas d'erreur, on renvoie vers le formulaire
@@ -23,10 +23,9 @@
 
     try {
         // Construction de la requête UPDATE sans injection SQL :
-        $requete = $db->prepare("UPDATE artist SET artist_id = :nom, artist_url = :url, SET Sdisc_year=:year WHERE disc_id = :id;");
+        $requete = $db->prepare("UPDATE disc SET disc_year=:year WHERE disc_id = :id;");
         $requete->bindValue(":id", $id, PDO::PARAM_INT);
-        $requete->bindValue(":nom", $nom, PDO::PARAM_STR);
-        $requete->bindValue(":url", $url, PDO::PARAM_STR);
+        
         $requete->bindValue(":year", $year, PDO::PARAM_STR);
 
 
@@ -40,5 +39,5 @@
     }
 
     // Si OK: redirection vers la page artist_detail.php
-    //header("Location: detail.php?id=" . $id);
-    //exit;
+    header("Location: detail.php?id=" . $id);
+    exit;
