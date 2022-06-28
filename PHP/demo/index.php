@@ -9,6 +9,7 @@ include "partials/header.php";
 
 <div class="container">
     <h1>Nous avons  <span class="text-primary"><?= count($tableau) ?></span>  Disques en stock : </h1>
+    <td class=""> <a class="btn btn-dark btn-sm" href="ajout.php">Ajout de disque</a> </td>
     <table class="table table-striped">
         <tr>
             <th>Pochette</th>
@@ -25,7 +26,7 @@ include "partials/header.php";
         // //     var_dump($Artist);
 
         // }
-            
+
         // // }
         
         
