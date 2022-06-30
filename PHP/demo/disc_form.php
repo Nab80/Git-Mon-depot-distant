@@ -31,6 +31,7 @@ include "partials/header.php";
         <label for="price">Prix:</label><br>
         <input type="text" name="price" id="price">
         <br><br>
+        
         <label for="genre">genre:</label><br>
         <input type="text" name="genre" id="genre">
         <br><br>

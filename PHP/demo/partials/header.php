@@ -15,7 +15,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-disk">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/demo">
+        <a class="navbar-brand" href="/index.php">
           <img src="images/velvetDog.png" width="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +29,7 @@
                 <span class="visually-hidden">(current)</span>
               </a>
             </li>
-
-
           </ul>
-
         </div>
       </div>
     </nav>
