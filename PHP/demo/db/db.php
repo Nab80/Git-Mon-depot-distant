@@ -4,8 +4,8 @@
 use PhpParser\Node\Expr\Cast\Object_;
 
 define( 'URL' , 'mysql:host=localhost;dbname=record;charset=utf8');
-define('USER' , 'nab');
-define('PASS' , 'nab80');
+define('USER' , 'nabi');
+define('PASS' , '8060*Empress');
 
 
 function connectionBase() 
